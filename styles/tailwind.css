@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .box {
+        @apply rounded-medium border border-solid border-border;
+    }
+}
+
 @layer base {
     @font-face {
         font-family: "ailerons";

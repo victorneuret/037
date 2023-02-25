@@ -25,7 +25,8 @@
     "noUnusedParameters": false,
     "preserveWatchOutput": true,
     "skipLibCheck": true,
-    "noImplicitThis": true
+    "noImplicitThis": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]

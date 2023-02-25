@@ -9,6 +9,21 @@ import {
 } from "@remix-run/react";
 import styles from "./tailwind.css";
 
+import dayjs from "dayjs";
+import en from "dayjs/locale/en";
+import isBetween from "dayjs/plugin/isBetween";
+import weekday from "dayjs/plugin/weekday";
+import isSameOrBefore from "dayjs/plugin/isSameOrBefore";
+import isSameOrAfter from "dayjs/plugin/isSameOrAfter";
+dayjs.extend(isBetween);
+dayjs.extend(weekday);
+dayjs.extend(isSameOrBefore);
+dayjs.extend(isSameOrAfter);
+dayjs.locale({
+  ...en,
+  weekStart: 1,
+});
+
 export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
 export const meta: MetaFunction = () => ({
@@ -24,7 +39,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="flex flex-col min-h-screen bg-slate-900">
+      <body className="flex flex-col min-h-screen bg-neutral-900">
         <Outlet />
         <ScrollRestoration />
         <Scripts />

@@ -11,6 +11,7 @@ specifiers:
   '@types/react': ^18.0.25
   '@types/react-dom': ^18.0.8
   copyfiles: ^2.4.1
+  dayjs: ^1.11.7
   eslint: ^8.27.0
   install: ^0.13.0
   isbot: ^3.6.5
@@ -27,6 +28,7 @@ dependencies:
   '@remix-run/react': 1.12.0_biqbaboplfbrettd7655fr4n2y
   '@remix-run/serve': 1.12.0
   copyfiles: 2.4.1
+  dayjs: 1.11.7
   install: 0.13.0
   isbot: 3.6.5
   react: 18.2.0
@@ -2919,6 +2921,10 @@ packages:
   /data-uri-to-buffer/3.0.1:
     resolution: {integrity: sha512-WboRycPNsVw3B3TL559F7kuBUM4d8CgMEvk6xEJlOp7OBPjt6G7z8WMWlD2rOFZLk6OYfFIUGsCOWzcQH9K2og==}
     engines: {node: '>= 6'}
+
+  /dayjs/1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
+    dev: false
 
   /deasync/0.1.28:
     resolution: {integrity: sha512-QqLF6inIDwiATrfROIyQtwOQxjZuek13WRYZ7donU5wJPLoP67MnYxA6QtqdvdBy2mMqv5m3UefBVdJjvevOYg==}
